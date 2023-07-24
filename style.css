@@ -1,0 +1,244 @@
+body {
+    font-family:'Kanit','Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    position: fixed;
+    width:100%;
+    background-color: white;
+}
+
+.navbar-section {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    position: fixed;
+    width:100%;
+    background-color: white;
+    top:0;
+}
+
+.navbar-section h1 {
+    font-size: 2em;
+    font-style: italic;
+    color: red;
+}
+
+.navbar-section ul{
+    list-style-type:none;
+    display:inline-flex;
+    padding:0;
+    margin-right:1em;
+}
+
+.navbar-section ul li{
+    margin-left: 1.5em;
+    flex:1;
+    font-size:1.1em;
+}
+
+.navbar-section ul li a {
+    text-decoration: none;
+    color:black;
+}
+
+.navbar-section2 {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    position: fixed;
+    width:100%;
+    background-color: white;
+}
+
+.navbar-section2 form {
+    position:fixed;
+    top:70px;
+    right:0px;
+}
+
+.come-visit {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width:100%;
+    height:100vh;
+   /* background-image:url('images/tokyo-tower-1.jpeg'); */
+    background-size:cover;
+    border-color: black;
+    border-width: 20px;
+}
+
+.come-visit h1 {
+    font-size:2.5em;
+    color:white;
+    text-shadow: -1px -1px 0 black, -1px -1px 0 black, -1px -1px 0 black, -1px -1px 0 black
+}
+
+.attraction-list {
+    display:flex;
+    justify-content:space-evenly;
+    list-style-type:none;
+    flex-wrap: wrap;
+}
+
+.attraction-list li {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    height:30em;
+    width:30em;
+    text-align: center;
+    border-style:groove;
+    border-radius: 10% 10% 10% 10%;
+    border-width: 2px;
+    background-size:cover;
+    color: white;
+    font-weight:200;
+}
+
+.attraction-list li:hover {
+    width:29.5em;
+    height:29.5em;
+}
+
+.tours-section table{
+    width:90%;
+}
+
+.come-eat {
+    display:flex;
+    align-items:center;
+    width:100%;
+    height:50vh;
+    background-image:url('images/japanese-food.jpeg');
+    background-size:cover;
+}
+
+.come-eat h1 {
+    color:wheat;
+}
+
+.come-eat p {
+    color:white;
+    margin-top:30px;
+    margin-left:10px;
+}
+
+.come-eat p a {
+    color:white;
+    text-decoration: none;
+}
+
+.travel-essential {
+    width:400px;
+    flex-grow:1;
+    text-align:center;
+}
+
+.a {
+    display:flex;
+}
+/* Attractions Page */
+
+.background-image {
+    width:100%;
+    background-image:url('images/mount-fuji.jpeg');
+    background-size:cover;
+    border-color: black;
+    border-width: 20px;
+}
+
+.descriptor {
+    width:100%;
+    height:100%;
+    color:white;
+}
+
+.descriptor h1 {
+    padding-left: 10px;
+}
+
+.descriptor p {
+    margin-left:10px;
+    width: 300px;
+    /* NEED TO UNDERSTAND */
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; 
+}
+
+@media (max-width:600px) {
+    .descriptor p {
+        padding-left:0px;
+    }
+}
+
+@media (max-height:490px) {
+    .background-image {
+        height:400px;
+    }
+}
+
+.shibuya {
+    width:100%;
+    background-image:url('images/shibuya.jpeg');
+    background-size:cover;
+    border-color: black;
+    border-width: 20px;
+}
+
+.tokyo-tower {
+    width:100%;
+    background-image:url('images/tokyo-tower.jpeg');
+    background-size:cover;
+    border-color: black;
+    border-width: 20px;
+}
+
+.osaka-castle {
+    width:100%;
+    background-image:url('images/osaka-castle.jpg');
+    background-size:cover;
+    border-color: black;
+    border-width: 20px;
+}
+
+
+/* BLOG */
+
+.blog-title {
+    display:flex;
+    align-items:center;
+    width:100%;
+    height:30vh;
+    background-image:url('images/japanese-food.jpeg');
+    background-size:cover; 
+}
+
+.blog-title h1 {
+    color:white;
+    max-width:1000px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.blog-header {
+    max-width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.blog-author {
+    max-width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.blog-paragraph {
+    max-width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:1.25em;
+}
