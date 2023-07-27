@@ -1,0 +1,60 @@
+.background-image {
+    width:100%;
+    background-image:url('../images/mount-fuji.jpeg');
+    background-size:cover;
+    border-color: black;
+    border-width: 20px;
+}
+
+.descriptor {
+    width:100%;
+    height:100%;
+    color:white;
+}
+
+.descriptor h1 {
+    padding-left: 10px;
+}
+
+.descriptor p {
+    margin-left:10px;
+    width: 300px;
+    /* NEED TO UNDERSTAND */
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; 
+}
+
+@media (max-width:600px) {
+    .descriptor p {
+        padding-left:0px;
+    }
+}
+
+@media (max-height:490px) {
+    .background-image {
+        height:400px;
+    }
+}
+
+.shibuya {
+    width:100%;
+    background-image:url('../images/shibuya.jpeg');
+    background-size:cover;
+    border-color: black;
+    border-width: 20px;
+}
+
+.tokyo-tower {
+    width:100%;
+    background-image:url('../images/tokyo-tower.jpeg');
+    background-size:cover;
+    border-color: black;
+    border-width: 20px;
+}
+
+.osaka-castle {
+    width:100%;
+    background-image:url('../images/osaka-castle.jpg');
+    background-size:cover;
+    border-color: black;
+    border-width: 20px;
+}

@@ -25,7 +25,7 @@ var images = [
   
   // Function to show the current image
   function showImage() {
-    slideshowContainer.style.backgroundImage = "url('" + images[currentImage] + "')";
+    slideshowContainer.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url('" + images[currentImage] + "')";
   }
   
   // Function to navigate to the next image
