@@ -3,31 +3,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <style>
+        .image-container {
+  width: 100%;
+  height: 400px; /* Set the initial height of the container */
+  overflow: hidden; /* Hide any overflow content */
+  position: relative; /* Required for absolute positioning of images */
+}
+
+/* Style the images to fit the container */
+.image-animate {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and fill container */
+  position: absolute; /* Position images on top of each other */
+  opacity: 0; /* Initially, hide the second image */
+  transition: opacity 0.5s ease; /* Add a smooth transition effect */
+}
+    </style>
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="images/japan-for-all.png" width="60">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="navbar-nav">
-                    <a class="nav-link active" href="home.html"> Home </a>
-                    <a class="nav-link" href="attractions.html"> Attractions </a>
-                    <a class="nav-link" href=""> Map </a>
-                    <a class="nav-link"> Search </a>
-                </div>
-            </div>
-            <form class="d-flex" role="search">
-                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-        </div>
-    </nav>
+    <p> ada dad </p>
+    <div class="image-container">
+        <img class="image-animate" src="images/shibuya.jpeg" alt="Image 1">
+        <img class="image-animate" src="images/osaka-castle.jpg" alt="Image 2">
+      </div>
+      <p> a </p>
+      <p> a </p>
+      <p> a </p>
+      <p> a </p><p> a </p><p> a </p><p> a </p><p> a </p><p> a </p><p> a </p><p> a </p><p> a </p><p> a </p><p> a </p><p> a </p><p> a </p>
       <script src="js/bootstrap.js"></script>
+      <script>
+        function handleIntersect(entries, observer) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // If the image comes into view, change its opacity to 1
+      entry.target.style.opacity = 1;
+    } else {
+      // If the image is out of view, change its opacity back to 0
+      entry.target.style.opacity = 0;
+    }
+  });
+}
+
+// Set up the Intersection Observer
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.5 // Adjust this threshold value to control when the image changes
+};
+
+const observer = new IntersectionObserver(handleIntersect, options);
+
+// Get all the image elements with the class "image-animate"
+const imageElements = document.querySelectorAll('.image-animate');
+
+// Observe each image element
+imageElements.forEach(image => observer.observe(image));
+    </script>
 </body>
 </html>

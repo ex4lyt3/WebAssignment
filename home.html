@@ -12,77 +12,66 @@
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        <img class="navbar-brand navbar-img" src="images/japan-for-all.png">
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-            <li class="navbar-item"> <a class="nav-link "href="./attractions.html"> Attractions  </a> </li>
-            <li class="navbar-item"> <a class="nav-link"> Map </a> </li>
-            <li class="navbar-item"> <a class="nav-link" href="#search-bar"> Search </a> </li>
-        </ul>
+    <nav class="navbar navbar-expand-sm fixed-top bg-white container">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/japan-for-all.png" width="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="home.html"> Home </a>
+                    <a class="nav-link" href="attractions.html"> Attractions </a>
+                    <a class="nav-link" href=""> Blog </a>
+                    <form class="d-flex" role="search">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
+                </div>
+            </div>
+            
         </div>
     </nav>
-    <div class="come-visit">
+    <div class="come-visit container">
         <h1> Visit Japan Today </h1>
         <div class="input-group search-bar">
             <input type="text" class="form-control" id="floatingInput" placeholder="Search">
         </div>
     </div>
-    <div class="features">
-        <h1> Many Places To Go To </h1>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="feature-box">
-                        <div class="feature-image">
-                            <img src="images/mount-fuji.jpeg">
-                        </div>
-                        <div class="feature-title">
-                            <p> Mount Fuji </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="feature-box">
-                        <div class="feature-image">
-                            <img src="images/osaka-castle.jpg">
-                        </div>
-                        <div class="feature-title">
-                            <p> Osaka Castle </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="feature-box">
-                        <div class="feature-image">
-                            <img src="images/shibuya.jpeg">
-                        </div>
-                        <div class="feature-title">
-                            <p> Shibuya </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="feature-box">
-                        <div class="feature-image">
-                            <img src="images/tokyo-tower-1.jpeg">
-                        </div>
-                        <div class="feature-title">
-                            <p> Tokyo Tower </p>
-                        </div>
-                    </div>
-                </div>
+    <div class="container text-center feature">
+        <h1 class="feature-title"> Many Places To Go </h1>
+        <div class="row feature-row">
+            <div class="col feature-image"> 
+                <img class="img-fluid" src="images/shibuya.jpeg">
             </div>
-        </div>
+            <div class="col feature-title d-flex align-items-center justify-content-center"> 
+                <h2> Shibuya - A City of Gold </h2> 
+            </div>
+        </div> 
+        <div class="row feature-row">
+            <div class="col feature-image"> 
+                <img class="img-fluid" src="images/tokyo-tower.jpeg">
+            </div>
+            <div class="col feature-title d-flex align-items-center"> 
+                <h2> <a href="attractions.html#tokyo-tower"> Tokyo Tower - To explore more </a> </h2> 
+            </div>
+        </div> 
+        <div class="row feature-row">
+            <div class="col feature-image"> 
+                <img class="img-fluid" src="images/osaka-castle.jpg">
+            </div>
+            <div class="col feature-title d-flex align-items-center"> 
+                <h2> Osaka Castle </h2> 
+            </div>
+        </div> 
     </div>
-    <div class="come-eat">
+    <div class="come-eat container">
         <h1> How To Feed Your Food Obsession In Japan </h1>  
         <p> <a href=food-obsession.html>Read more...</a> </p>
     </div>
-    <div>
+    <div class="container">
         <h1> Travel Essentials </h1>
         <div class="a">
             <div class="travel-essential">
@@ -100,7 +89,7 @@
         </div>
     </div>
     <hr>
-    <div class="tours-section">
+    <div class="tours-section container">
         <h1> Other Information </h1>
         <table>
             <tr><td>Featured Tours</td><td>Explore All Tours</td><td>Walking Trails</td><td>Explore All Trails </td></tr>
@@ -109,7 +98,7 @@
             <tr><td colspan="2">Towards Okinawa</td><td colspan="2">Autumn Foliage Expedition</td></tr>
         </table>
     </div>
-    <footer>
+    <footer class="container">
         &copy;2023 Nippon Seikai Kaisha
     </footer>
     <script src="./index.js"></script>

@@ -1,6 +1,6 @@
 .background-image {
     width:100%;
-    background-image:url('../images/mount-fuji.jpeg');
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('../images/mount-fuji.jpeg');
     background-size:cover;
     border-color: black;
     border-width: 20px;
@@ -37,7 +37,7 @@
 
 .shibuya {
     width:100%;
-    background-image:url('../images/shibuya.jpeg');
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('../images/shibuya.jpeg');
     background-size:cover;
     border-color: black;
     border-width: 20px;
@@ -45,7 +45,7 @@
 
 .tokyo-tower {
     width:100%;
-    background-image:url('../images/tokyo-tower.jpeg');
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('../images/tokyo-tower.jpeg');
     background-size:cover;
     border-color: black;
     border-width: 20px;
@@ -53,7 +53,7 @@
 
 .osaka-castle {
     width:100%;
-    background-image:url('../images/osaka-castle.jpg');
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('../images/osaka-castle.jpg');
     background-size:cover;
     border-color: black;
     border-width: 20px;

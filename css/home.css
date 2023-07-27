@@ -26,33 +26,19 @@
     border-radius:30px;
 }
 
-.features {
-    padding: 10px 0;
+.feature-title {
+    padding-top:20px;
+    font-size:50px;
 }
 
-.features h1 {
-    margin-top: 30px;
-    text-align:center;
+.feature-row {
+    margin-bottom:10px;
 }
 
-.feature-box {
-    width:300px;
-    border-radius:30px;
-    box-shadow: 0 0 10px 1px rgba(37,72,214,0.18);
-}
-
-.feature-image {
-    position:relative;
-}
-
-.feature-image img {
-    height:75%;
-    width:100%;
-}
-
-.feature-title p {
-    text-align:center;
-    font-size:28px;
+.feature-image img{
+    border-radius: 30px;
+    padding-top:5px;
+    padding-bottom:5px;
 }
 
 .attraction-list {
