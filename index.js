@@ -1,15 +1,3 @@
-//TO-DOS
-//HTML/CSS
-//Make home page
-//Make food page
-//Make travel essentials page (Use tables)
-//Make tours page
-
-//Javascript
-// Implement search function?
-// Implement local database
-// Do some animations maybe
-
 // Define an array of image URLs
 var images = [
     './images/slideshow-1.jpeg',
@@ -25,7 +13,7 @@ var images = [
   
   // Function to show the current image
   function showImage() {
-    slideshowContainer.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6), url(" + images[currentImage] + ")";
+    slideshowContainer.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(" + images[currentImage] + ")";
   }
   
   // Function to navigate to the next image
