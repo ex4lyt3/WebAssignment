@@ -17,6 +17,12 @@
     text-shadow: -1px -1px 0 black, -1px -1px 0 black, -1px -1px 0 black, -1px -1px 0 black
 }
 
+@media (max-height:490px) {
+    .come-visit h1 {
+        padding-top:100px;
+    }
+}
+
 .search-bar {
     padding-top:10px;
     max-width:400px;
@@ -27,6 +33,9 @@
     border-color:rgba(255, 0, 0, 0.683);
     border-style:solid;
     border-width: 3.9px;
+    animation-name: hover;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
 }
 
 .tours-section table{
@@ -66,3 +75,12 @@
 .a {
     display:flex;
 }
+
+@keyframes hover{
+    0%{
+    transform: scale(100%)
+    }
+    100%{
+      transform: scale(105%)
+    }
+  }
