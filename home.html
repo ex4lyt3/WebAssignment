@@ -8,11 +8,12 @@
     <link rel="stylesheet" type="text/css" href="./css/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,500;0,700;1,800&family=Noto+Serif+JP&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Kanit:ital,wght@0,300;0,500;0,700;1,800&family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm fixed-top bg-white container">
+    <nav class="navbar navbar-expand-sm fixed-top bg-white container-fluid">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="images/japan-for-all.png" width="60">
@@ -34,44 +35,56 @@
             
         </div>
     </nav>
-    <div class="come-visit container">
+    <div class="come-visit container-fluid">
         <h1> Visit Japan Today </h1>
         <div class="input-group search-bar">
             <input type="text" class="form-control" id="floatingInput" placeholder="Search">
         </div>
     </div>
-    <div class="container text-center feature">
-        <h1 class="feature-title"> Many Places To Go </h1>
-        <div class="row feature-row">
-            <div class="col feature-image"> 
-                <img class="img-fluid" src="images/shibuya.jpeg">
+    <div class="container">
+        <h2 class="mt-3">Many Places to Explore</h2>
+        <div class="row mb-3">
+            <div class="col-6">
+                <div class="card feature-card">
+                    <img src="images/slideshow-1.jpeg" class="card-img-top" alt="shibuya">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title" style="color:white">Mount Fuji</h4>
+                    </div>
+                </div>
             </div>
-            <div class="col feature-title d-flex align-items-center justify-content-center"> 
-                <h2> Shibuya - A City of Gold </h2> 
+            <div class="col-6">
+                <div class="card feature-card">
+                    <img src="images/shibuya-1.jpg" class="card-img-top" alt="shibuya">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title" style="color:white">Shibuya</h4>
+                    </div>
+                </div>
             </div>
-        </div> 
-        <div class="row feature-row">
-            <div class="col feature-image"> 
-                <img class="img-fluid" src="images/tokyo-tower.jpeg">
+        </div>
+        <div class="row mb-3">
+            <div class="col-6">
+                <div class="card feature-card">
+                    <img src="images/tokyo-tower.jpeg" class="card-img-top" alt="shibuya">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title" style="color:white">Tokyo Tower</h4>
+                    </div>
+                </div>
             </div>
-            <div class="col feature-title d-flex align-items-center"> 
-                <h2> <a href="attractions.html#tokyo-tower"> Tokyo Tower - To explore more </a> </h2> 
+            <div class="col-6">
+                <div class="card feature-card">
+                    <img src="images/osaka-castle.jpg" class="card-img-top" alt="shibuya">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title" style="color:white">Osaka Castle</h4>
+                    </div>
+                </div>
             </div>
-        </div> 
-        <div class="row feature-row">
-            <div class="col feature-image"> 
-                <img class="img-fluid" src="images/osaka-castle.jpg">
-            </div>
-            <div class="col feature-title d-flex align-items-center"> 
-                <h2> Osaka Castle </h2> 
-            </div>
-        </div> 
+        </div>
     </div>
-    <div class="come-eat container">
+    <div class="come-eat container-fluid">
         <h1> How To Feed Your Food Obsession In Japan </h1>  
         <p> <a href=food-obsession.html>Read more...</a> </p>
     </div>
-    <div class="container">
+    <div class="container-fluid">
         <h1> Travel Essentials </h1>
         <div class="a">
             <div class="travel-essential">
@@ -89,7 +102,7 @@
         </div>
     </div>
     <hr>
-    <div class="tours-section container">
+    <div class="tours-section container-fluid">
         <h1> Other Information </h1>
         <table>
             <tr><td>Featured Tours</td><td>Explore All Tours</td><td>Walking Trails</td><td>Explore All Trails </td></tr>
@@ -98,7 +111,7 @@
             <tr><td colspan="2">Towards Okinawa</td><td colspan="2">Autumn Foliage Expedition</td></tr>
         </table>
     </div>
-    <footer class="container">
+    <footer class="container-fluid">
         &copy;2023 Nippon Seikai Kaisha
     </footer>
     <script src="./index.js"></script>
