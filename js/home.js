@@ -1,18 +1,18 @@
 // Define an array of image URLs
-var images = [
+const images = [
     './images/slideshow-1.jpeg',
     './images/slideshow-2.jpeg',
     './images/slideshow-3.jpeg',
     './images/mount-fuji.jpeg'
   ];
   
-  var currentImage = 0;
-  var slideshowContainer = document.querySelector('.come-visit');
+  let currentImage = 0;
+  const slideshowContainer = document.querySelector('.come-visit');
 
   
   // Function to show the current image
   function showImage() {
-    slideshowContainer.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(" + images[currentImage] + ")";
+    slideshowContainer.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.15)), url(" + images[currentImage] + ")";
   }
   
   // Function to navigate to the next image
